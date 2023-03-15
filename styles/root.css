@@ -1,0 +1,35 @@
+:root {
+/* ### Primary */
+
+  --Soft-blue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+  --Cyan-hover: hsla(178, 100%, 50%, 0.5);
+
+/* ### Neutral */
+
+  --Very-dark-blue-main-BG: hsl(217, 54%, 11%);
+  --Very-dark-blue-card-BG: hsl(216, 50%, 16%);
+  --Very-dark-blue-line: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: 'Outfit', sans-serif;
+}
+/* 
+.hover-content {
+  background-color: var(--Cyan);
+  background-image: url('../images/icon-view.svg');
+}
+
+.hover-image:hover span {
+  opacity: 1;
+  visibility: visible;  
+} */
+/* 
+#image {
+  background-color: red;
+} */

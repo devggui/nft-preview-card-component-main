@@ -4,30 +4,48 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
+  <script src="https://cdn.tailwindcss.com"></script>
+
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/root.css">
+
   <title>Frontend Mentor | NFT preview card component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
-<body>
-
-  Equilibrium #3429
-
-  Our Equilibrium collection promotes balance and calm.
-
-  0.041 ETH
-  3 days left
+<body class="w-screen h-screen flex items-center justify-center bg-[var(--Very-dark-blue-main-BG)]">
+  <main class="w-72 flex flex-col p-5 rounded-2xl bg-[var(--Very-dark-blue-card-BG)]">    
+    <div class="relative">
+      <img src="./images/image-equilibrium.jpg" alt="Imagem de um cubo colorido com reflexo na parte de baixo." class="rounded-2xl" id="image">            
+      <a href="./images/image-equilibrium.jpg">
+        <div class="w-full h-full flex items-center justify-center rounded-2xl opacity-0 absolute top-0 left-0 right-0 bottom-0 duration-300 ease-in-out bg-[var(--Cyan-hover)] bg-[url('./images/icon-view.svg')] bg-no-repeat bg-center cursor-pointer hover:opacity-100"></div>              
+      </a>
+    </div>
+    
+    <h1 class="font-bold text-[var(--White)] text-xl my-4 hover:text-[var(--Cyan)]">Equilibrium #3429</h1>
   
-  Creation of Jules Wyvern
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    <p class="text-sm text-[var(--Soft-blue)]">Our Equilibrium collection promotes balance and calm.</p>
+  
+    <div class="flex flex-row justify-between my-4">
+      <div class="flex flex-row items-center justify-center">
+        <img src="./images/icon-ethereum.svg" alt="Icone no formato de uma diamante na cor azul." class="mr-1">
+        <p class="text-md text-[var(--Cyan)]">0.041 ETH</p>
+      </div>
+      <div class="flex flex-row items-center justify-center">
+        <img src="./images/icon-clock.svg" alt="Icone de um relógio na cor cinza." class="mr-1">
+        <p class="text-sm text-[var(--Soft-blue)]">3 days left</p>
+      </div>
+    </div>
+    <hr class="border-[var(--Very-dark-blue-line)]">
+    <div class="flex flex-row items-center justify-left mt-4">
+      <img src="./images/image-avatar.png" alt="" class="w-8 h-8 rounded-full border-solid border-[1px] border-[var(--White)] mr-4">
+      <p class="text-sm text-[var(--Soft-blue)]">Creation of <span class="text-[var(--White)] hover:text-[var(--Cyan)]">Jules Wyvern</span></p>
+    </div>
+  </main>
 </body>
 </html>
